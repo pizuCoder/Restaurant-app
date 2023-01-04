@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <title>Restaurant Ordering App</title>
+</head>
+      
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"></script>
+  <header id="main-header" class="bg-warning text-black p-4 mb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+            <h1 id="header-title" class="align-self-center">Restaurant Ordering App</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+   <div id="main" class="card card-body">
+    <form id="addForm" class="form-inline mb-3">
+      <input type="number" class="form-control mr-2" id="price" placeholder="Enter Price" required>
+      <input type="text" class="form-control mr-2" id="dishType" placeholder="Enter Order Name" required>
+    <select name="chooseTable" id="chooseTable" class="form-control mr-2">
+        <option value="TableNumber" disabled selected>Table Number</option>
+        <option value="Table_1">Table_1</option>
+        <option value="Table_2">Table_2</option>
+        <option value="Table_3">Table_3</option>
+    </select>
+    <input type="submit" class="btn btn-dark" value = "Add To Bill">
+    </form>
+    <h2 class="title">Orders</h2>
+    <b>Table-1 </b>
+    <ul id="Table-1" class="list-group">
+     
+    </ul>
+    <b>Table-2 </b>  
+    <ul id="Table-2" class="list-group">
+      
+    </ul>
+    <b>Table-3 </b> 
+    <ul id="Table-3" class="list-group">
+       
+    </ul>
+   </div>
+  </div>
+<script src="index.js"></script>
+</body>
+</html>
